@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(0, 36%, 95%);
+}
+
+.section-container,
+.input-container {
+  text-align: center;
+  padding: 50px 30px 30px 30px;
+}
+
+/* Header Component Styling */
+
+.logo {
+  margin: 30px 0 30px 30px;
+}
+
+.header-img {
+  width: 100%;
+}
+
+/* Section Component Styling */
+
+.heading {
+  letter-spacing: 1rem;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 1em;
+}
+
+.heading span {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+.paragraph-text {
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 1.7em;
+  color: hsl(0, 36%, 60%);
+}
+
+/* Input Section Styling */
+
+.input-container {
+  padding-top: 0;
+}
+
+.input-container form {
+  width: 100%;
+  border: 1px solid hsl(0, 36%, 75%);
+  background-color: transparent;
+  color: hsl(0, 36%, 60%);
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-field {
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  padding-left: 20px;
+  outline: none;
+}
+
+.arrow {
+  width: 90px;
+  background-color: hsl(0, 93%, 68%);
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.error {
+  color: red;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+
+    padding: 0 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app {
+    background-image: url(./assets/images/bg-pattern-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+
+    box-shadow: 0 3px 9px 0 gray;
+
+    max-width: 1200px;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .lg-container {
+    width: 60%;
+    padding: 0 100px;
+  }
+
+  .section-container,
+  .input-container {
+    text-align: left;
+  }
+
+  .img-container {
+    width: 40%;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo {
+    margin-bottom: 30px;
+  }
+}
